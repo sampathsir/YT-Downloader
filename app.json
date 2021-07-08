@@ -1,29 +1,33 @@
 {
-  "name": "YouTube Downloader",
-  "description": "A telegram bot To Download Youtube Files ",
-  "logo": "https://telegra.ph/file/5c993ec33b004a9ca1670.jpg",
-  "keywords": [
-    "Youtube","YoutubeDownloader"
-  ],
-  "repository": "https://github.com/LushaiMusic/YT-Downloader",
-  "success_url": "https://t.me/uploadzKbot",
-  "website": "https://github.com/LushaiMusic/YT-Downloader",
-  "env": {
-        "API_ID": {"description": "Get this value from https://my.telegram.org", "required": true},
-        "API_HASH": {"description": "Get this value from https://my.telegram.org" , "required": true},
-        "BOT_TOKEN": {"description": "Get Bot Token From @BotFather","required": true}
-  },
-      "buildpacks": [
-        {"url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest.git"},
-        {"url": "heroku/python"}
+    "name": "YT-Downloader",
+    "description": "Simple basic code for a telegram bot in Telethon.",
+    "logo": "",
+    "keywords": [
+        "telegram",
+        "telethon",
+        "telegram-bot",
+        "botzhub"
     ],
-  "formation": {
-        "worker": {
-            "quantity": 1,
-            "size": "free"
+    "repository": "https://github.com/sampathsir/YT-Downloader",
+    "website": "xditya.me",
+    "success_url": "https://t.me/BotzHub",
+    "env": {
+        "API_HASH": {
+            "description": "You API HASH from my.telegram.org",
+            "value": ""
+        },
+        "APP_ID": {
+            "description": "You API ID from my.telegram.org",
+            "value": ""
+        },
+        "BOT_TOKEN": {
+            "description": "Bot token, get it from @BotFather.",
+            "value": ""
         }
     },
-      "stack": "heroku-20"
-
-
+    "buildpacks": [
+        {
+            "url": "heroku/python"
+        }
+    ]
 }
